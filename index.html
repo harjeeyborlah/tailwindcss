@@ -15,14 +15,17 @@
             <!--Content wrapper-->
             <div class="md:col-span-1  md:flex md:justify-end">
                 <nav class="text-right">
-                    <div>
+                    <div class="flex justify-between items-center">
                         <h1
                             class="font-bold uppercase p-4 border-b border-gray-100"
                         >
                             <a href="/" class="hover:text-gray-700">Food Ninja</a>
                         </h1>
+                        <div class="px-4 cursor-pointer md:hidden" id="burger">
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M21 18H3v-2h18v2Zm0-5H3v-2h18v2Zm0-5H3V6h18v2Z"/></svg>
+                        </div>
                     </div>
-                    <ul text-sm mt-6>
+                    <ul class="text-sm mt-6 hidden md:block" id="menu">
                         <li class="text-gray-700 font-bold py-1">
                             <a href="#" class="px-4 flex justify-end items-center border-r-4 border-primary">
                                 <span>Home</span>
@@ -48,8 +51,8 @@
 
             <main class="px-16 py-6 bg-gray-100 md:col-span-2">
                 <div class="flex justify-center md:justify-end">
-                    <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white">Log In</a>
-                    <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white">Sign Up</a>
+                    <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log In</a>
+                    <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign Up</a>
                 </div>
 
                 <header>
@@ -130,12 +133,13 @@
                     </div>
 
                     <div class="flex justify-center">
-                        <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner">
+                        <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300">
                             Load More
                         </div>
                     </div>
                 </div>
             </main>
         </div>
+        <script src="public/index.js"></script>
     </body>
 </html>
