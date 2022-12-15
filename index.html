@@ -13,29 +13,32 @@
     <body class="text-gray-600">
         <div class="grid md:grid-cols-3">
             <!--Content wrapper-->
-            <div class="md:col-span-1">
-                <nav>
+            <div class="md:col-span-1  md:flex md:justify-end">
+                <nav class="text-right">
                     <div>
                         <h1
                             class="font-bold uppercase p-4 border-b border-gray-100"
                         >
-                            <a href="/">Food Ninja</a>
+                            <a href="/" class="hover:text-gray-700">Food Ninja</a>
                         </h1>
                     </div>
-                    <ul>
-                        <li class="text-gray-700 font-bold">
-                            <a href="#">
+                    <ul text-sm mt-6>
+                        <li class="text-gray-700 font-bold py-1">
+                            <a href="#" class="px-4 flex justify-end items-center border-r-4 border-primary">
                                 <span>Home</span>
+                                <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M6 19h3v-6h6v6h3v-9l-6-4.5L6 10Zm0 2q-.825 0-1.412-.587Q4 19.825 4 19v-9q0-.475.213-.9q.212-.425.587-.7l6-4.5q.275-.2.575-.3q.3-.1.625-.1t.625.1q.3.1.575.3l6 4.5q.375.275.588.7q.212.425.212.9v9q0 .825-.587 1.413Q18.825 21 18 21h-5v-6h-2v6Zm6-8.75Z"/></svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="py-1">
+                            <a href="#" class="px-4 flex justify-end items-center border-r-4 border-white">
                                 <span>About</span>
+                                <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M11 9h2V7h-2m1 13c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m-1 15h2v-6h-2v6Z"/></svg>
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
+                        <li class="py-1">
+                            <a href="#" class="px-4 flex justify-end items-center border-r-4 border-white">
                                 <span>Contact</span>
+                                <svg class="w-5 ml-2" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M14 11h7V6h-7Zm3.5-1.25L15 8V7l2.5 1.75L20 7v1ZM2 21q-.825 0-1.412-.587Q0 19.825 0 19V5q0-.825.588-1.413Q1.175 3 2 3h20q.825 0 1.413.587Q24 4.175 24 5v14q0 .825-.587 1.413Q22.825 21 22 21Zm7-7q1.25 0 2.125-.875T12 11q0-1.25-.875-2.125T9 8q-1.25 0-2.125.875T6 11q0 1.25.875 2.125T9 14Zm-6.9 5h13.8q-1.05-1.875-2.9-2.938Q11.15 15 9 15t-4 1.062Q3.15 17.125 2.1 19Z"/></svg>
                             </a>
                         </li>
                     </ul>
@@ -45,8 +48,8 @@
 
             <main class="px-16 py-6 bg-gray-100 md:col-span-2">
                 <div class="flex justify-center md:justify-end">
-                    <a href="#" class="text-primary">Log In</a>
-                    <a href="#" class="text-primary ml-2">Sign In</a>
+                    <a href="#" class="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white">Log In</a>
+                    <a href="#" class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white">Sign Up</a>
                 </div>
 
                 <header>
@@ -63,10 +66,10 @@
 
                     <div class="mt-8 grid lg:grid-cols-3 gap-10">
                         <!--cards go here-->
-                        <div class="card">
+                        <div class="card hover:shadow-lg">
                             <img
-                                src="public/img/Siyanbola Ajibola Kolade.jpg"
-                                alt="jb"
+                                src="public/img/5 bean chili.jpg"
+                                alt="5 bean chili"
                                 class="w-full h-32 sm:h-48 object-cover"
                             />
                             <div class="m-4">
@@ -76,14 +79,15 @@
                                 >
                             </div>
                             <div class="badge">
+                                <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 20a7 7 0 0 1-7-7a7 7 0 0 1 7-7a7 7 0 0 1 7 7a7 7 0 0 1-7 7m0-16a9 9 0 0 0-9 9a9 9 0 0 0 9 9a9 9 0 0 0 9-9a9 9 0 0 0-9-9m.5 4H11v6l4.75 2.85l.75-1.23l-4-2.37V8M7.88 3.39L6.6 1.86L2 5.71l1.29 1.53l4.59-3.85M22 5.72l-4.6-3.86l-1.29 1.53l4.6 3.86L22 5.72Z"/></svg>
                                 <span>25 mins</span>
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card hover:shadow-lg">
                             <img
-                                src="public/img/citadel.jpg"
-                                alt="citadel"
+                                src="public/img/veg noodles.jpg"
+                                alt="veg noodles"
                                 class="w-full h-32 sm:h-48 object-cover"
                             />
                             <div class="m-4">
@@ -93,13 +97,14 @@
                                 >
                             </div>
                             <div class="badge">
+                                <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 20a7 7 0 0 1-7-7a7 7 0 0 1 7-7a7 7 0 0 1 7 7a7 7 0 0 1-7 7m0-16a9 9 0 0 0-9 9a9 9 0 0 0 9 9a9 9 0 0 0 9-9a9 9 0 0 0-9-9m.5 4H11v6l4.75 2.85l.75-1.23l-4-2.37V8M7.88 3.39L6.6 1.86L2 5.71l1.29 1.53l4.59-3.85M22 5.72l-4.6-3.86l-1.29 1.53l4.6 3.86L22 5.72Z"/></svg>
                                 <span>25 mins</span>
                             </div>
                         </div>
 
-                        <div class="card">
+                        <div class="card hover:shadow-lg">
                             <img
-                                src="public/img/EQBfxjcWoAAUK2w.jpg"
+                                src="public/img/tofu curry.jpg"
                                 alt="curry"
                                 class="w-full h-32 sm:h-48 object-cover"
                             />
@@ -110,6 +115,7 @@
                                 >
                             </div>
                             <div class="badge">
+                                <svg class="w-5 inline-block" xmlns="http://www.w3.org/2000/svg" style="vertical-align: -0.125em;" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 20a7 7 0 0 1-7-7a7 7 0 0 1 7-7a7 7 0 0 1 7 7a7 7 0 0 1-7 7m0-16a9 9 0 0 0-9 9a9 9 0 0 0 9 9a9 9 0 0 0 9-9a9 9 0 0 0-9-9m.5 4H11v6l4.75 2.85l.75-1.23l-4-2.37V8M7.88 3.39L6.6 1.86L2 5.71l1.29 1.53l4.59-3.85M22 5.72l-4.6-3.86l-1.29 1.53l4.6 3.86L22 5.72Z"/></svg>
                                 <span>25 mins</span>
                             </div>
                         </div>
@@ -124,7 +130,7 @@
                     </div>
 
                     <div class="flex justify-center">
-                        <div class="bg-secondary-100 text-secondary-200">
+                        <div class="btn bg-secondary-100 text-secondary-200 hover:shadow-inner">
                             Load More
                         </div>
                     </div>
